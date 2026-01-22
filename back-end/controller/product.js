@@ -3,7 +3,18 @@
 exports.getProducts = async (req, res) => {
   try {
 
-    const product = products;
+    const product = [
+ {
+   "id": 1,
+   "name": "Laptop",
+   "price": 1500
+ },
+ {
+   "id": 2,
+   "name": "Headphones",
+   "price": 200
+ }
+];
     
     res.status(200).json(product);
   } catch (error) {

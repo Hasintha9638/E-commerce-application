@@ -5,7 +5,7 @@ const ProductPage = () => {
     const [products, setProducts] = useState(null);
     const [cart , setCart] = useState([]);
     useEffect(() => {
-        fetch('/api/products')
+        fetch('http://localhost:3000/api/products')
             .then(response => response.json())
             .then(data => setProducts(data));
     }, []);
